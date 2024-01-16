@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;800&display=swap");
+
+body {
+  cursor: default;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: "Poppins", serif;
+}
+
+h1 {
+  font-weight: 800;
+  margin: 1rem 0 0;
+  color: aliceblue;
+}
+
+h2 {
+  
+  color:aliceblue;
+  display: flex;
+  flex-flow:column;
+  height: fit-content;
+  width: calc(14.2857% - 2rem); 
+  margin: 0.25rem;
+  padding: 1rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.596);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h3 {
+  color:aliceblue;
+  display: flex;
+  flex-flow:column;
+  width: calc(14.2857% - 2rem); 
+  height: fit-content;
+  margin: auto 0.25rem;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.596);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-start; 
+  
+}
+
+ul li {
+  cursor: pointer;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: calc(14.2857% - 2rem);
+  margin: 0.25rem;
+  padding: 1rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.377);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+ul li:hover {
+  background: #00000070;
+  font-weight: 800;
+  
+}
+
+ul li time {
+  font-size: 2rem;
+  margin: 0 0 0rem 0;
+  font-weight: 500;
+}
+
+ul .today {
+  background: #ffffff70;
+}
+
+ul .today time {
+  font-weight: 800;
+}
+
+.markedday {
+  background: rgba(255, 0, 0, 0.521);
+}
+
+.markedday:hover {
+  background: rgba(128, 0, 0, 0.521);
+  
+}
+
+textarea {
+  color: aliceblue;
+  resize: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navigation a {
+  color: rgb(255, 255, 255);
+  float: left;
+  padding: 10px 25px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: bottom;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.164);
+}
+  
+  .navigation a.active {
+  background-color: dodgerblue;
+  color: white;
+  }
+
+.invis {
+  opacity: 0;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
