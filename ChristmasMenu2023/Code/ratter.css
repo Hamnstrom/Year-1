@@ -1,0 +1,86 @@
+body {
+    background-color: firebrick;
+}
+
+div {
+    margin: 3px;
+    padding: 3px;
+    /*
+    border: 3px dimgray;
+    border-style: solid;
+    */
+}
+
+h2 {
+    color: dimgray;
+    text-align: center;
+    margin: 10px;
+}
+
+li {
+    font-size: small;
+}
+
+h3 {
+    color: dimgray;
+}
+
+a {
+    color: slateblue;
+}
+
+a:visited {
+    color: darkred;
+}
+
+.All {
+    background-color: lightgrey;
+    /*
+    background-image: url(../assets/img/Xforthemenu.png);*/
+    width: 595px;
+    height: 842px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    position: relative;    
+    border: 3px black;
+    border-style: solid;
+    border-radius: 3%;
+}
+
+.MainContent {
+    /*
+    background-image: url(../assets/img/Xretardedpictire.png);*/
+    border-right: 3px black solid;
+    width: 500px;
+}
+
+.MainIMG {
+    
+    margin: 1px;
+    padding: 1px;
+}
+
+.MainIMGIMG {
+    margin-top: 4px;
+    width: 330px;
+    height: 825px;
+    border-radius: 3%;
+}
+/*
+.SecondaryIMG {
+    position: absolute;
+    
+}
+
+.SecondaryIMGIMG {
+    visibility: hidden;
+    width: 200px;
+    height: 525px;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+}
+*/
+

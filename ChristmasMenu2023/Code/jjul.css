@@ -1,0 +1,91 @@
+
+body {
+  background-color: dimgray;
+  
+  background-image: url(../assets/img/Xjulll.png) ;
+  background-repeat: no-repeat;
+  background-size: 170%;
+  
+}
+
+div {
+  margin: 5px;
+  padding: 3px;
+  right: auto;
+  /*
+  border: 5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: navajowhite;
+  */
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: b;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: cadetblue;
+}
+
+h2 {
+  font-size: 50px;
+  color: black;
+  font-family: Garamond, serif;
+}
+
+p {
+  font-size: 28px;
+  color: blue;
+}
+
+li {
+  font-size: 38px;
+  list-style: none;
+  color: blue;
+}
+
+
+#borderimg {
+  padding: 15px;
+  border-image: url(https://i0.wp.com/media.victoriasprovkok.se/2012/12/image-74.jpg) 30 round;
+}
+
+img.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+.ContentUpper {
+  display: flex;
+  float: left;
+}
+
+.ContentSub {
+  text-align: left;
+  padding: 20px;
+  width: fit-content;
+  background-color: dimgray;
+  
+  background-image: url(../assets/img/Xlånga.png);
+  
+}
+
+.ContentSubIMG {
+  width: 300px;
+  height: 300px;
+}
+
+.shlawg {
+  text-align: right;
+}
+
+.Title {
+  text-align: center;
+  padding: 15px;
+  background-color: dimgray;
+  
+  background-image: url(../assets/img/Xforthemenu.png);
+  
+}

@@ -1,0 +1,87 @@
+body {
+    background-color: dimgrey;
+    background-image: url(../Other/XKeyboard.png);
+    background-size: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+div {
+    /*margin: 3px;
+    border: 3px;
+    border-style: solid;*/
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 75px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow: -3px 3px 3px #000;
+    color: azure;
+}
+
+p {
+    margin: 0px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.Header {
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    background-color: rgb(184, 184, 184, 0.5);
+    overflow: auto;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(184, 184, 184);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.Calendar {
+    
+}
+
+.MainContentTitle {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.MonthsComeHere {
+    overflow: auto;
+    /*width: fit-content;*/
+    height: fit-content;
+}
+
+.Month h3 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 180px;
+}
+
+.Month {
+    width: fit-content;
+    float: left;
+    margin: 20px;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(184, 184, 184);
+    background-color: rgb(184, 184, 184, 0.5);
+
+    border-radius: 10px;
+}

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Mesmerize;
+    src: url(../Assets/Fonts/mesmerize/mesmerize-ex-bk.ttf);
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+
+    background-image: linear-gradient(150deg, rgb(231, 158, 98), rgb(111, 166, 192));
+    background-color: dimgray;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+div {
+    /*
+    border: 2px black dotted;
+    border-radius: 10px;
+    */
+}
+
+h1 {
+    text-align: center;
+    vertical-align: middle;
+
+    font-family: Mesmerize;
+    font-size: 60px;
+    background-image: linear-gradient(200deg, rgb(223, 140, 223), rgb(150, 223, 150));
+    background-clip: text;
+    color: transparent;
+    
+    /*
+    -webkit-text-fill-color: transparent;*/
+}
+
+img {
+    margin: 3px;
+    height: 500px;
+    width: 500px;
+    border: 2px lightgray solid;
+    border-radius: 20px;
+
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+button {
+
+    height: 40px;
+    width: 95px;
+    font-size: x-large;
+    font-family: Mesmerize;
+    
+    border: 2px lightgray solid;
+    border-radius: 10px;
+
+    background-image: linear-gradient(125deg, rgb(179, 156, 106), rgb(81, 81, 110));
+    background-clip: text;
+    color: transparent;
+    
+}
+
+
+.All {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+}
