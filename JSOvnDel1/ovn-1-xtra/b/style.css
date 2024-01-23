@@ -1,0 +1,40 @@
+
+body {
+    background-color: dimgray;
+
+}
+
+div {
+    border: 7px black solid;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 3px;
+    background: linear-gradient(120deg, rgb(113, 230, 238), rgb(224, 191, 99));
+
+    text-align: center;
+
+    min-height: 50px;
+    min-width: 300px;
+    width: fit-content;
+
+    float: left;
+}
+
+p {
+    color: orange;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#month {
+    font-size: 46px;
+}
+
+#day {
+    font-size: 46px;
+}
+
+#year {
+    font-size: 46px;
+}
+
