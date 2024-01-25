@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Saiba;
+    src: url(../../Assets/Fonts/Saiba/SAIBA-45.ttf);
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: dimgray;
+    background-image: url(../../Assets/IMG/XBridge.png);
+    background-size: 100% 100%;
+}
+
+div {
+    border: 1px rosybrown dotted;
+}
+
+h2 {
+    font-size: 52px;
+    background: -webkit-linear-gradient(140deg, rgb(207, 181, 107), #84e4c7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: Saiba;
+}
+
+
+.page {
+    margin: -5px;
+    width: 100%;
+    height: fit-content;
+    
+}
+
+.main {
+
+
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+    margin: auto;
+    padding: 3px;
+
+    border: 3px whitesmoke solid;
+    border-radius: 20px;
+    
+    min-width: 900px;
+    width: fit-content;
+    min-height: 500px;
+
+    background-color: rgba(128, 83, 47, 0.61);
+    
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.linkContainer {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 8%;
+    right: 8%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.links {
+    background-color: rgb(240, 110, 47, 0.5);
+    height: 450px;
+    border-radius: 20px;
+
+    width: 240px;
+
+    text-align: center;
+}
