@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .clickable-div {
+      cursor: pointer;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      display: inline-block;
+    }
+  </style>
+  <title>Continuous Counter</title>
+</head>
+<body>
+
+<div class="clickable-div" onmousedown="startCounter(1)" onmouseup="stopCounter()">Div 1</div>
+<div class="clickable-div" onmousedown="startCounter(2)" onmouseup="stopCounter()">Div 2</div>
+<div class="clickable-div" onmousedown="startCounter(3)" onmouseup="stopCounter()">Div 3</div>
+<div class="clickable-div" onmousedown="startCounter(4)" onmouseup="stopCounter()">Div 4</div>
+<div class="clickable-div" onmousedown="startCounter(5)" onmouseup="stopCounter()">Div 5</div>
+<div class="clickable-div" onmousedown="startCounter(6)" onmouseup="stopCounter()">Div 6</div>
+
+<p>Counter: <span id="counter">0</span></p>
+
+<script>
+  let counterInterval;
+  let counterValue = 0;
+
+  function startCounter(buttonNumber) {
+    // Clear any existing interval
+    clearInterval(counterInterval);
+
+    // Reset the counter value
+    counterValue = 0;
+
+    // Start a new interval to increment the counter by 0.05 every 10 milliseconds
+    counterInterval = setInterval(function () {
+      counterValue += 0.05;
+      document.getElementById('counter').innerText = counterValue.toFixed(2);
+    }, 10);
+  }
+
+  function stopCounter() {
+    // Stop the interval when the button is released
+    clearInterval(counterInterval);
+  }
+</script>
+
+</body>
+</html>

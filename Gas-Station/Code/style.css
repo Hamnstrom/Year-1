@@ -1,0 +1,135 @@
+
+@font-face {
+    font-family: lobster;
+    src: url(../Assets/Lobster-1.4.otf);
+}
+@font-face {
+    font-family: helveticrap;
+    src: url(../Assets/Helveticrap.ttf);
+}
+
+body{
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    background: linear-gradient(160deg,rgb(73, 92, 31),rgb(23, 77, 68)) no-repeat center fixed;
+}
+
+div{
+    padding: 3px;
+    margin: 3px;
+}
+
+
+
+.main{
+    position: relative;
+    
+    width: 90%;
+    height: 90%;
+    
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.buttons{
+    background: linear-gradient(130deg,lightgray,gray);
+
+    grid-column: 1;
+    grid-row: 1 / span 2;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 7px;
+}
+
+.prices{
+    background: linear-gradient(130deg,lightgray,gray);
+    
+
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+
+    display: grid;
+}
+
+.price{
+    background: linear-gradient(160deg,pink,rgb(190, 157, 48));
+    border-radius: 10px;
+}
+
+.price h2{
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.display{
+    background: linear-gradient(130deg,lightgray,gray);
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.event{
+    background: linear-gradient(160deg,rgb(146, 146, 146),rgb(59, 59, 59));
+    border-radius: 10px;
+
+    min-height: 180px;
+}
+
+.button{
+    background: linear-gradient(160deg,rgb(116, 116, 177),gray);
+
+    border-radius: 10px;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+/*
+.button:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+}
+  
+.button:active:after {
+    box-shadow: 0 0 0 0 white;
+    border-radius: 10px;
+    opacity: 1;
+    transition: 0s;
+}
+*/
+
+.button-h3{
+    height: fit-content;
+
+    font-family:lobster;
+    font-size: 50px;
+
+
+}
+
+.pay{
+    grid-column: span 2;
+    background: -moz-linear-gradient(160deg,gold,salmon);
+}
