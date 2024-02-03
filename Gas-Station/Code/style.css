@@ -25,6 +25,7 @@ div{
 .main{
     position: relative;
     
+    
     width: 90%;
     height: 90%;
     
@@ -38,9 +39,12 @@ div{
     grid-template-rows: auto auto;
 }
 
-.buttons{
+.sub{
+    border-radius: 10px;
     background: linear-gradient(130deg,lightgray,gray);
+}
 
+.buttons{
     grid-column: 1;
     grid-row: 1 / span 2;
 
@@ -50,56 +54,29 @@ div{
     gap: 7px;
 }
 
-.prices{
-    background: linear-gradient(130deg,lightgray,gray);
-    
-
-    grid-column: 2 / span 2;
-    grid-row: 1 / span 1;
-
-    display: grid;
-}
-
-.price{
-    background: linear-gradient(160deg,pink,rgb(190, 157, 48));
-    border-radius: 10px;
-}
-
-.price h2{
-    font-size: 30px;
-    font-family: fantasy;
-}
-
-.display{
-    background: linear-gradient(130deg,lightgray,gray);
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 1;
-
-    overflow: hidden;
-
-    display: grid;
-    grid-template-columns: auto auto;
-    
-}
-
-.event{
-    background: linear-gradient(160deg,rgb(146, 146, 146),rgb(59, 59, 59));
-    border-radius: 10px;
-
-    min-height: 180px;
-}
-
 .button{
     background: linear-gradient(160deg,rgb(116, 116, 177),gray);
 
     border-radius: 10px;
+
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .button:hover,
 .button:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
+
+  filter: brightness(1.50);
 }
+
+.button:active{
+    filter: brightness(0.90);
+}
+
 /*
 .button:after {
     content: "";
@@ -129,7 +106,48 @@ div{
 
 }
 
+.wide{
+    grid-column: span 2;
+}
+
 .pay{
     grid-column: span 2;
     background: -moz-linear-gradient(160deg,gold,salmon);
+}
+
+
+
+.prices{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+
+    display: grid;
+}
+
+.price{
+    background: linear-gradient(160deg,rgb(116, 116, 177),gray);
+    border-radius: 10px;
+}
+
+.price h2{
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.display{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.event{
+    background: linear-gradient(160deg,rgb(146, 146, 146),rgb(59, 59, 59));
+    border-radius: 10px;
+
+    min-height: 180px;
 }

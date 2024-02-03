@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="../Assets/firefox.png">
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +12,15 @@
 
 
     <div class="main">
-        <div class="buttons">
+        <div class="buttons sub">
             <div class="button">
                 <h3 class="button-h3">95</h3>
             </div>
             <div class="button">
                 <h3 class="button-h3">98</h3>
             </div>
-            <div class="button">
+            <div class="button wide">
                 <h3 class="button-h3">diesel</h3>
-            </div>
-            <div class="button">
-                <h3 class="button-h3">gas</h3>
             </div>
             <div class="button">
                 <h3 class="button-h3">E10</h3>
@@ -30,35 +28,37 @@
             <div class="button">
                 <h3 class="button-h3">CNG</h3>
             </div>
-            <div class="button pay">
+            <div class="button pay" onclick="setSum(0)">
                 <h3 class="button-h3">Pay</h3>
             </div>
 
         </div>
         
-        <div class="prices">
+        <div class="prices sub">
             <div class="price">
-                <h2>95=</h2>
+                <h2 id="1">95=</h2>
             </div>
             <div class="price">
-                <h2>98=</h2>
+                <h2 id="2">98=</h2>
             </div>
             <div class="price">
-                <h2>diesel=</h2>
+                <h2 id="3">diesel=</h2>
             </div>
+        <!--
             <div class="price">
                 <h2>gas=</h2>
             </div>
+        -->
             <div class="price">
-                <h2>E10=</h2>
+                <h2 id="4">E10=</h2>
             </div>
             <div class="price">
-                <h2>CNG=</h2>
+                <h2 id="5">CNG=</h2>
             </div>
 
         </div>
 
-        <div class="display">
+        <div class="display sub">
             <div class="event">
                 <h1></h1>
             </div>
