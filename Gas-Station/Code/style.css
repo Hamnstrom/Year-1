@@ -12,7 +12,7 @@ body{
     position: absolute;
     height: 95%;
     width: 95%;
-    background: linear-gradient(160deg,rgb(73, 92, 31),rgb(23, 77, 68)) no-repeat center fixed;
+    background: url(../Assets/XForest.png) no-repeat center fixed;
 }
 
 div{
@@ -20,11 +20,8 @@ div{
     margin: 3px;
 }
 
-
-
 .main{
     position: relative;
-    
     
     width: 90%;
     height: 90%;
@@ -40,8 +37,9 @@ div{
 }
 
 .sub{
-    border-radius: 10px;
-    background: linear-gradient(130deg,lightgray,gray);
+    background: rgb(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .buttons{
@@ -55,55 +53,16 @@ div{
 }
 
 .button{
-    background: linear-gradient(160deg,rgb(116, 116, 177),gray);
+    background: rgba(255, 255, 255, 0.5);
 
     border-radius: 10px;
 
-    -moz-user-select: none; /* Firefox */
+    -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-}
-
-.button:hover,
-.button:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
-
-  filter: brightness(1.50);
-}
-
-.button:active{
-    filter: brightness(0.90);
-}
-
-/*
-.button:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    opacity: 0;
-    transition: all 0.5s;
-    box-shadow: 0 0 10px 40px white;
-}
-  
-.button:active:after {
-    box-shadow: 0 0 0 0 white;
-    border-radius: 10px;
-    opacity: 1;
-    transition: 0s;
-}
-*/
-
-.button-h3{
-    height: fit-content;
-
-    font-family:lobster;
-    font-size: 50px;
-
-
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .wide{
@@ -112,21 +71,67 @@ div{
 
 .pay{
     grid-column: span 2;
-    background: -moz-linear-gradient(160deg,gold,salmon);
+    background: rgba(163, 255, 255, 0.5);
 }
 
+.button:hover,
+.button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    filter: sepia(2.0);
+}
 
+.button:active{
+    filter: brightness(0.90);
+}
 
-.prices{
+.button-h3{
+    height: fit-content;
+
+    font-family: lobster;
+    font-size: 50px;
+}
+
+.multi{
+    padding: 0px;
+
     grid-column: 2 / span 2;
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.guide{
+    margin: 10px;
+    
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.guide ol, li{
+    width: fit-content;
+
+    font-size: 22px;
+}
+
+.prices{  
+    grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 
     display: grid;
 }
 
 .price{
-    background: linear-gradient(160deg,rgb(116, 116, 177),gray);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .price h2{
@@ -146,8 +151,28 @@ div{
 }
 
 .event{
-    background: linear-gradient(160deg,rgb(146, 146, 146),rgb(59, 59, 59));
+    /*
+    background: rgba(255, 255, 255, 0.5);
+    */
     border-radius: 10px;
 
+    padding: 0px;
+
     min-height: 180px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.bar{
+    background: rgba(255, 255, 255, 0.5);
+    
+    border-radius: 10px;
+}
+
+.buyForSub{
+    background: rgba(255, 255, 255, 0.5);
+
+    border-radius: 10px;
+
+    font-family: helveticrap;
 }
