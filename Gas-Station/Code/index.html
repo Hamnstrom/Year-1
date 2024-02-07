@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="../Assets/Monkey.png">
     <link rel="stylesheet" href="./style.css">
@@ -7,35 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
 
 
     <div class="main">
-        <div class="buttons sub">
-            <div class="button">
+        <div class="buttons sub noselect">
+            <div class="button" onclick="selprice=prices[0].price">
                 <h3 class="button-h3">95</h3>
             </div>
-            <div class="button">
+            <div class="button" onclick="selprice=prices[1].price">
                 <h3 class="button-h3">98</h3>
             </div>
-            <div class="button wide">
+            <div class="button wide" onclick="selprice=prices[2].price">
                 <h3 class="button-h3">diesel</h3>
             </div>
-            <div class="button">
+            <div class="button" onclick="selprice=prices[3].price">
                 <h3 class="button-h3">E10</h3>
             </div>
-            <div class="button">
+            <div class="button" onclick="selprice=prices[4].price">
                 <h3 class="button-h3">CNG</h3>
             </div>
-            <div class="button pay">
-                <h3 class="button-h3">Pay</h3>
+            <div class="button pump" id="pump" onmousedown="mouseDown=1" onmouseup="mouseDown=0">
+                <h3 class="button-h3">pump</h3>
             </div>
 
         </div>
-        
+
         <div class="multi sub">
-            <div class="prices">
+            <div class="prices noselect">
                 <div class="price">
                     <h2 id="1">95=</h2>
                 </div>
@@ -50,36 +52,46 @@
                 </div>
                 <div class="price">
                     <h2 id="5">CNG=</h2>
-                </div>    
+                </div>
             </div>
             <div class="guide">
                 <h1>Guide:</h1>
                 <ol>
                     <li>Choose fuel</li>
                     <li>Enter price for fuel</li>
+                    <li>Pump</li>
                     <li>Review sum</li>
                     <li>pay</li>
+                </ol>
+
+                <p>-----------------------------------</p>
+                
+                <h1>Things To know:</h1>
+                <ol>
+                    <li>Default price limit is 25</li>
+                    <li>...</li>
                 </ol>
             </div>
         </div>
 
         <div class="display sub">
-            <div class="event">
-                <div class="buyForSub button" id="buyFor1" onclick="foobar(1)">
+            <div class="event noselect">
+                <div class="buyForSub button" onclick="limit=10">
                     <h1>10€</h1>
                 </div>
-                <div class="buyForSub button" id="buyFor2" onclick="foobar(2)">
+                <div class="buyForSub button" onclick="limit=25">
                     <h1>25€</h1>
                 </div>
-                <div class="buyForSub button" id="buyFor3" onclick="foobar(3)">
+                <div class="buyForSub button" onclick="limit=50">
                     <h1>50€</h1>
                 </div>
-                <div class="buyForSub button" id="buyFor4" onclick="foobar(4)">
+                <div class="buyForSub button" onclick="limit=100">
                     <h1>100€</h1>
                 </div>
             </div>
             <div class="bar">
-                <h1>foo</h1>
+                <h1 id="out">0.00</h1>
+                <h1 id="outprice">0.00</h1>
             </div>
         </div>
     </div>
@@ -87,4 +99,5 @@
 
     <script src="./main.js"></script>
 </body>
+
 </html>

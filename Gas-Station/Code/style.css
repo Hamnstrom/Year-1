@@ -20,6 +20,15 @@ div{
     margin: 3px;
 }
 
+.noselect{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
 .main{
     position: relative;
     
@@ -57,32 +66,37 @@ div{
 
     border-radius: 10px;
 
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .wide{
     grid-column: span 2;
 }
 
-.pay{
-    grid-column: span 2;
-    background: rgba(163, 255, 255, 0.5);
-}
-
 .button:hover,
 .button:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.25em);
-    filter: sepia(2.0);
+    transform: translateY(-0.25em) scale(1.02);
+    background-color: rgba(163, 255, 255, 0.5);
 }
 
 .button:active{
     filter: brightness(0.90);
+    transform: scale(0.95);
+}
+
+.pump{
+    grid-column: span 2;
+    background: rgba(163, 255, 255, 0.5);
+}
+
+.pump:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    background-color: rgba(163, 221, 255, 0.5);
+}
+
+.pump:active{
+    transform: scale(0.95);
 }
 
 .button-h3{
@@ -126,12 +140,6 @@ div{
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .price h2{

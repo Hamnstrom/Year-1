@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onmousedown="mouseDown=1" onmouseup="mouseDown=0">
+        foo
+    </button>
+
+    <div>
+        <h1 id="out">0.00</h1>
+        <h1 id="outprice">0.00</h1>
+    </div>
+
+
+    <script>
+        let mouseDown=0;
+        
+        let pumped=0;
+        let price=2.123;
+        let limit=20;
+        limit=limit/price;
+        let finalPrice=pumped*price;
+
+        function pump(){
+            if(pumped<limit){
+                pumped+=0.027284584;
+                //pumped=Number(pumped.toFixed(3))
+            }
+            else if(pumped>limit){
+                pumped=limit
+            }
+            else{
+                console.log("error01")
+            }
+        }
+
+        function pumpCheck(){
+            if(mouseDown==1){
+                pump()
+            }
+            else{
+                null
+            }
+            let finalPrice=pumped*price;
+            document.getElementById("out").innerHTML=`Pumped: ${pumped.toFixed(3)}`
+            document.getElementById("outprice").innerHTML=`Price: ${finalPrice.toFixed(2)}`
+        }
+
+        setInterval(pumpCheck, 2)
+    </script>
+</body>
+</html>
+
+<style>
+    body{
+        background-color: gray;
+    }
+
+    button{
+        font-size: 80px;
+        height: 100px;
+        width: 200px;
+    }
+
+
+</style>
