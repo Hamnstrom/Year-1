@@ -47,6 +47,7 @@ div{
 
 .sub{
     background: rgb(0,0,0,0.5);
+    backdrop-filter: blur(2px);
     padding: 5px;
     border-radius: 15px;
 }
@@ -62,7 +63,7 @@ div{
 }
 
 .button{
-    background: rgba(255, 255, 255, 0.5);
+    background-color: rgba(163, 221, 255, 0.5);
 
     border-radius: 10px;
 
@@ -74,9 +75,9 @@ div{
 
 .button:hover,
 .button:focus {
+    scale: 1.05;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.25em) scale(1.02);
-    background-color: rgba(163, 255, 255, 0.5);
+    filter: brightness(1.80);
 }
 
 .button:active{
@@ -90,9 +91,9 @@ div{
 }
 
 .pump:hover{
+    scale: 1.05;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.25em);
-    background-color: rgba(163, 221, 255, 0.5);
+    filter: brightness(1.80);
 }
 
 .pump:active{
@@ -112,7 +113,59 @@ div{
     grid-column: 2 / span 2;
 
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
+}
+
+.keypadwrapper{
+    background: rgba(255, 255, 255, 0.5);
+    
+    margin: 10px;
+
+    border-radius: 10px;
+}
+
+.keypadout{
+    border: 3px black solid;
+    border-radius: 10px;
+    
+    text-align: center;
+    
+    font-size: 40px;
+}
+
+.keypad{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    
+}
+.key{
+    background-color: rgba(163, 221, 255, 0.5);
+
+    border: 3px black solid;
+    border-radius: 10px;
+
+    height: 75px;
+    width: 75px;
+
+    font-size: 40px;
+
+    margin: 3px;
+}
+
+.cardreader{
+    
+    border: 3px black solid;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.cardreader h1{
+    font-size: 30px;
+
+    margin: 3px;
 }
 
 .guide{
@@ -178,8 +231,6 @@ div{
 }
 
 .buyForSub{
-    background: rgba(255, 255, 255, 0.5);
-
     border-radius: 10px;
 
     font-family: helveticrap;

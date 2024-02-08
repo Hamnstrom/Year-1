@@ -17,21 +17,21 @@ for(let i=0;i<5;i++){
 let mouseDown=0;
         
 let pumped=0;
-let price=2.123;
-let limit;
-limit=limit/price;
+let price=1.111;
+let limit01=0;
+
 let finalPrice=pumped*price;
 
-function pump(){
 
-    if(pumped<limit){
-        pumped+=0.027284584;
-    }
-    else if(pumped>limit){
-        pumped=limit
-    }
-    else{
-        console.log("error01")
+function pump(){
+    
+    
+    let newPumped = pumped + 0.009284584; // Calculate the pumped amount without modifying pumped directly
+
+    if (newPumped * price <= limit01) {
+        pumped = newPumped; // Update pumped only if finalPrice is within the limit
+    } else {
+        pumped = limit01 / price; // Set pumped to the maximum value allowed by the limit
     }
 
     console.log(pumped)
@@ -49,4 +49,5 @@ function pumpCheck(){
     document.getElementById("outprice").innerHTML=`Price: ${finalPrice.toFixed(2)}€`
 }
 
-setInterval(pumpCheck, 2)
+setInterval(pumpCheck, 10)
+
