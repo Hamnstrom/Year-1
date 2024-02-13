@@ -1,53 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .clickable-div {
-      cursor: pointer;
-      padding: 10px;
-      margin: 5px;
-      border: 1px solid #ccc;
-      display: inline-block;
-    }
-  </style>
-  <title>Continuous Counter</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		body{
+			background-color: gray;
+		}		
+		.keypadwrapper{
+			background: rgba(255, 255, 255, 0.5);
+			
+			margin: 10px;
+
+			border-radius: 10px;
+
+			width: 400px;
+		}
+		.keypadout{
+			border: 3px black solid;
+			border-radius: 10px;
+			
+			text-align: center;
+			
+			font-size: 40px;
+		}
+		.keypad{
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-template-rows: auto auto auto auto;
+			gap: 10px;	
+		}
+		.key{
+			background-color: rgba(163, 221, 255, 0.5);
+
+			border: 3px black solid;
+			border-radius: 10px;
+
+			height: 75px;
+			width: 75px;
+
+			font-size: 40px;
+
+			margin: 3px;
+		}
+		.cardreader{
+			
+			border: 3px black solid;
+			border-radius: 10px;
+
+			text-align: center;
+		}
+		.cardreader h1{
+			font-size: 30px;
+
+			margin: 3px;
+		}
+
+		.button:hover,
+		.button:focus {
+			scale: 1.05;
+			box-shadow: 0 0.5em 0.5em -0.4em let(--hover);
+			filter: brightness(1.80);
+		}
+		.button:active{
+			filter: brightness(0.90);
+			transform: scale(0.95);
+		}
+		.noselect{
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Old versions of Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+		}
+
+	</style>
 </head>
 <body>
 
-<div class="clickable-div" onmousedown="startCounter(1)" onmouseup="stopCounter()">Div 1</div>
-<div class="clickable-div" onmousedown="startCounter(2)" onmouseup="stopCounter()">Div 2</div>
-<div class="clickable-div" onmousedown="startCounter(3)" onmouseup="stopCounter()">Div 3</div>
-<div class="clickable-div" onmousedown="startCounter(4)" onmouseup="stopCounter()">Div 4</div>
-<div class="clickable-div" onmousedown="startCounter(5)" onmouseup="stopCounter()">Div 5</div>
-<div class="clickable-div" onmousedown="startCounter(6)" onmouseup="stopCounter()">Div 6</div>
+<div id="img"></div>
 
-<p>Counter: <span id="counter">0</span></p>
+<audio id="audio2" src="../Assets/explosion.mp3"></audio>
 
-<script>
-  let counterInterval;
-  let counterValue = 0;
 
-  function startCounter(buttonNumber) {
-    // Clear any existing interval
-    clearInterval(counterInterval);
+	<script>
 
-    // Reset the counter value
-    //counterValue = 0;
+		
 
-    // Start a new interval to increment the counter by 0.05 every 10 milliseconds
-    counterInterval = setInterval(function () {
-      counterValue += 0.10;
-      document.getElementById('counter').innerText = counterValue.toFixed(2);
-    }, 10);
-  }
-
-  function stopCounter() {
-    // Stop the interval when the button is released
-    clearInterval(counterInterval);
-  }
-</script>
-
+		
+	</script>
 </body>
 </html>

@@ -24,16 +24,13 @@
             <div class="button wide" onclick="price=prices[2].price">
                 <h3 class="button-h3">diesel</h3>
             </div>
-            <div class="button" onclick="price=prices[3].price">
-                <h3 class="button-h3">E10</h3>
-            </div>
-            <div class="button" onclick="price=prices[4].price">
+
+            <div class="button wide" onclick="price=prices[4].price">
                 <h3 class="button-h3">CNG</h3>
             </div>
             <div class="button pump" id="pump" onmousedown="mouseDown=1" onmouseup="mouseDown=0">
                 <h3 class="button-h3">pump</h3>
             </div>
-
         </div>
 
         <div class="multi sub">
@@ -47,31 +44,33 @@
                 <div class="price">
                     <h2 id="3">diesel=</h2>
                 </div>
-                <div class="price">
+                <!--
+                <div class="price hidden">
                     <h2 id="4">E10=</h2>
                 </div>
+                -->
                 <div class="price">
-                    <h2 id="5">CNG=</h2>
+                    <h2 id="4">CNG=</h2>
                 </div>
             </div>
 
             <div class="keypadwrapper">
-                <div class="keypadout noselect">
+                <div class="keypadout noselect" id="keypadout" style="min-height: 50px;">
                     <p style="margin: 0px;">****</p>
                 </div>
                 <div class="keypad">
-                    <div class="key button noselect">1</div>
-                    <div class="key button noselect">2</div>
-                    <div class="key button noselect">3</div>
-                    <div class="key button noselect">4</div>
-                    <div class="key button noselect">5</div>
-                    <div class="key button noselect">6</div>
-                    <div class="key button noselect">7</div>
-                    <div class="key button noselect">8</div>
-                    <div class="key button noselect">9</div>
-                    <div class="key button noselect">C</div>
-                    <div class="key button noselect">0</div>
-                    <div class="key button noselect">OK</div>
+                    <div class="key button noselect" onclick="keypad(1)">1</div>
+                    <div class="key button noselect" onclick="keypad(2)">2</div>
+                    <div class="key button noselect" onclick="keypad(3)">3</div>
+                    <div class="key button noselect" onclick="keypad(4)">4</div>
+                    <div class="key button noselect" onclick="keypad(5)">5</div>
+                    <div class="key button noselect" onclick="keypad(6)">6</div>
+                    <div class="key button noselect" onclick="keypad(7)">7</div>
+                    <div class="key button noselect" onclick="keypad(8)">8</div>
+                    <div class="key button noselect" onclick="keypad(9)">9</div>
+                    <div class="key button noselect" onclick="keypad(`clear`)">C</div>
+                    <div class="key button noselect" onclick="keypad(0)">0</div>
+                    <div class="key button noselect" onclick="keypad(`ok`)">OK</div>
                 </div>
                 <div class="cardreader button noselect">
                     <h1>Enter card</h1>
@@ -116,8 +115,13 @@
                 </div>
             </div>
             <div class="bar">
-                <h1 id="out">0.00</h1>
-                <h1 id="outprice">0.00</h1>
+                <div class="out">
+                    <h1 id="out">0.00</h1>
+                    <h1 id="outprice">0.00</h1>    
+                </div>
+                <div class="finish button noselect">
+                    <h1 class="finish" onclick="reset()">pay</h1>
+                </div>
             </div>
         </div>
     </div>
