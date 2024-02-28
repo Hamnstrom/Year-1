@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div class="descript sub">
+        <p>Lotto: 1-40   1 tilläggsnummer  1-40  | 7 numror</p>
+        <p>EuroJackpot: 1-50 , 2 tilläggsnummer 1-12  |  5 numror</p>
+        <p>ViktingLotto: 1-48  1 tilläggsnummer  1-5 | 6 numror</p> 
+        <p>Keno: 1-70 | 10 numror</p>
+    </div>
+    
+    <div class="main">
+
+        <div class="dropdown">
+            <button class="dropbtn">Game</button>
+            
+            <div class="dropdown-content">
+                <button onclick="gamemode('lotto')">Lotto</button>
+                <button onclick="gamemode('euro')">EuroJackpot</button>
+                <button onclick="gamemode('viking')">VikingLotto</button>
+                <button onclick="gamemode('keno')">Keno</button>
+            </div>
+        </div> 
+
+        <div style="height: fit-content;" class="sub">
+            <h3>How many rows? (don't go toooooooo large)</h3>
+            <div class="write" contenteditable="true" id="rowcount">
+                ...
+            </div>
+            <button onclick="genRow()">Enter</button>
+        </div>
+
+        <div class="sub">
+            <button onclick="generate()">Generate numbers</button>
+        </div>
+
+        <div class="sub">
+            <p>Normal numbers:</p>
+            <div id="normal" style="display: grid;grid-template-columns: auto auto auto;"></div>
+        
+        </div>
+
+        <div class="sub">
+            <p>Extra numbers:</p>
+            <div id="extra" style="display: grid;grid-template-columns: auto auto auto;"></div>
+        </div> 
+            
+        
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
