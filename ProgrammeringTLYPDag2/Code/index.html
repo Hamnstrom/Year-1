@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="dropdown">
+            <button class="dropbtn">Game</button>
+            
+            <div class="dropdown-content">
+                <button onclick="gamemode('lotto')">Lotto</button>
+                <button onclick="gamemode('euro')">EuroJackpot</button>
+                <button onclick="gamemode('viking')">VikingLotto</button>
+                <button onclick="gamemode('keno')">Keno</button>
+            </div>
+        </div> 
+
+        <div style="height: fit-content;">
+            <h3>How many rows? (max 50)</h3>
+            <div class="write" contenteditable="true" id="rowcount">
+                ...
+            </div>
+            <button onclick="genRow()">Enter</button>
+        </div>
+            
+        
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
