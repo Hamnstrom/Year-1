@@ -1,0 +1,86 @@
+
+
+body{
+    background: linear-gradient(140deg, lightgray, gray) no-repeat center fixed;
+
+    color: yellow;
+}
+
+div{
+    /*
+    border: 3px white solid;
+    */
+    margin: 3px;
+    padding: 3px;
+}
+
+
+.status{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 90%;
+    bottom: 90%;
+
+    background-color: darkslategray;
+
+    overflow-x: scroll;
+    scrollbar-width: thin;
+
+    font-size: 2em;
+}
+
+.boiler{
+
+    position: absolute;
+    top: 0;
+    left: 90%;
+    right: 0;
+    bottom: 90%;
+
+    background-color: darkslategray;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+
+    font-size: 2em;
+}
+
+.main{
+    border: 3px white solid;
+
+    background: linear-gradient(140deg, gray, dimgray);
+
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.image{
+    display: grid;
+
+    grid-template-columns: auto;
+}
+
+.image div{
+    background-color: darkslategrey;
+}
+
+.control{
+    display: grid;
+}
+
+.control button{
+    background-color: darkslategrey;
+
+    font-size: 2em;
+
+    margin: 3px;
+    padding: 3px;
+}
