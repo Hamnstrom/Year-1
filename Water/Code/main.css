@@ -22,10 +22,11 @@ div{
     right: 90%;
     bottom: 90%;
 
+    min-width: 175px;
+
     background-color: darkslategray;
 
-    overflow-x: scroll;
-    scrollbar-width: thin;
+    overflow: hidden;
 
     font-size: 2em;
 }
@@ -33,16 +34,16 @@ div{
 .boiler{
 
     position: absolute;
-    top: 0;
-    left: 90%;
-    right: 0;
-    bottom: 90%;
+    top: 10%;
+    left: 0;
+    right: 90%;
+    bottom: 80%;
+
+    min-width: 175px;
 
     background-color: darkslategray;
 
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: thin;
+    overflow: hidden;
 
     font-size: 2em;
 }
@@ -65,6 +66,7 @@ div{
 .image{
     display: grid;
 
+    background: url(../Assets/XScratched.png) no-repeat center fixed;
     grid-template-columns: auto;
 }
 
@@ -83,4 +85,13 @@ div{
 
     margin: 3px;
     padding: 3px;
+}
+
+
+.btn:hover{
+    scale: 1.02;
+}
+
+.btn:active{
+    transform: scale(0.95);
 }
