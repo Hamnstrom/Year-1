@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: lobster;
+    src: url(./Lobster-1.4.otf);
+}
+
+html {
+    size: 100% 100%;
+}
+
+body {
+    size:100% 100%;
+
+    background-color: dimgray;
+    background: linear-gradient(120deg, rgb(226, 243, 153), rgb(136, 205, 226)) no-repeat center fixed;
+}
+
+div {
+    border: 7px black solid;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 3px;
+    /*
+    background: linear-gradient(120deg, rgb(226, 243, 153), rgb(136, 205, 226));
+    */
+    min-height: 50px;
+    min-width: 300px;
+    width: fit-content;
+
+    
+}
+
+button {
+    margin: 3px;
+    border: 7px black solid;
+    border-radius:  20px;
+    height: 220px;
+    width: 500px;
+
+    font-family: fantasy;
+    font-size: 80px;
+    /*
+    background: linear-gradient(120deg, rgb(243, 243, 152), rgb(138, 213, 243));
+    */
+    filter: saturate(150%);
+    
+}
+
+button:hover {
+    filter:saturate(250%);
+}
+
+h1 {
+    color: transparent;
+    /*
+    background: linear-gradient(120deg, rgb(231, 189, 109), rgb(107, 207, 214));
+    */
+    background-clip: text;
+    width: fit-content;
+    
+    font-family: fantasy;
+    font-size: 60px;
+
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: fantasy;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: left;
+}
+
+p {
+    color: black;
+
+    font-family: lobster;
+    text-align: left;
+}
+
+
+
+
